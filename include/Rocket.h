@@ -25,6 +25,7 @@ class Rocket
         void set_update_flag();
         sf::Sprite get_sprite();
         void move_sprite();
+        void check_border();
 
 
     private:

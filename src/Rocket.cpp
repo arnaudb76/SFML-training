@@ -4,12 +4,14 @@
 Rocket::Rocket()
 {
     m_angle = 0;
-    m_velocity =10;
+    m_velocity =0;
     m_mass = 100;
     m_thrust = 0;
     m_rot_speed =0;
     m_texture.loadFromFile("rocket.jpg");
     m_sprite.setTexture(m_texture);
+    m_sprite.setOrigin(48,93);
+    m_sprite.setPosition(400,300);
 }
 
 Rocket::~Rocket()
@@ -45,12 +47,12 @@ float Rocket::deg2rad(int deg){
 void Rocket::update_velocity(float time){
     float dax,day;
     dax = (m_thrust/m_mass*sin(deg2rad(m_angle)) );
-    day = (-m_thrust/m_mass*cos(deg2rad(m_angle))) + 9 ; // Ici 9 est la gravite. TODO class planete avec gravite
+    day = (-m_thrust/m_mass*cos(deg2rad(m_angle)))  ; // Ici 9 est la gravite. TODO class planete avec gravite
     float dvx, dvy;
     dvx = dax * time + get_dvx();
     dvy = day * time + get_dvy();
     m_velocity = sqrt(dvx*dvx+dvy*dvy);
-    m_angle = m_rot_speed*time;
+    m_angle = m_angle + m_rot_speed*time;
 }
 
 void Rocket::add_rot_speed(float w){
@@ -73,5 +75,18 @@ sf::Sprite Rocket::get_sprite(){
     return m_sprite;
 }
 
+void Rocket::move_sprite(){
+    m_sprite.move(get_dvx(),get_dvy());
+    m_sprite.setRotation(m_angle);
+    check_border();
+}
+
+void Rocket::check_border(){
+    sf::Vector2f position = m_sprite.getPosition();
+    if (position.x<10) {m_sprite.setPosition(1,position.y);m_velocity=0;}
+    if (position.x>800) {m_sprite.setPosition(799,position.y);m_velocity=0;}
+    if (position.y<10) {m_sprite.setPosition(position.x,1);m_velocity=0;}
+    if (position.y>6000) {m_sprite.setPosition(position.x,599);m_velocity=0;}
+}
 
 

@@ -19,10 +19,10 @@ int main()
             if (event.type == sf::Event::Closed)
                 window.close();
         }
-        if (sf::Keyboard::isKeyPressed((sf::Keyboard::Left))) {my_lander.add_rot_speed(-0.1); my_lander.set_update_flag();}
-        if (sf::Keyboard::isKeyPressed((sf::Keyboard::Right))) {my_lander.add_rot_speed(0.1);my_lander.set_update_flag();}
-        if (sf::Keyboard::isKeyPressed((sf::Keyboard::Up))) {my_lander.set_thrust(1000);my_lander.set_update_flag();}
-        if (sf::Keyboard::isKeyPressed((sf::Keyboard::Down))) {my_lander.set_thrust(0);my_lander.set_update_flag();}
+        if (sf::Keyboard::isKeyPressed((sf::Keyboard::Left))) {my_lander.add_rot_speed(-1.0); my_lander.set_update_flag();}
+        if (sf::Keyboard::isKeyPressed((sf::Keyboard::Right))) {my_lander.add_rot_speed(1.0);my_lander.set_update_flag();}
+        if (sf::Keyboard::isKeyPressed((sf::Keyboard::Up))) {my_lander.set_thrust(1000);my_lander.set_update_flag();} else {my_lander.set_thrust(0);}
+
 
         if (my_lander.is_updated()){
             std::cout << "Speed: " << my_lander.get_velocity()<< std::endl;
@@ -32,6 +32,7 @@ int main()
         }
 
         my_lander.update_velocity(clock.restart().asSeconds());
+        my_lander.move_sprite();
 
         window.clear();
         window.draw(my_lander.get_sprite());
