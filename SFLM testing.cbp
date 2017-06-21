@@ -22,6 +22,7 @@
 					<Add library="sfml-graphics" />
 					<Add library="sfml-window" />
 					<Add library="sfml-system" />
+					<Add library="sfml-audio" />
 					<Add directory="../../../Prog/CodeBlocks/MinGW/My_include/SFML-2.4.2/bin" />
 				</Linker>
 			</Target>
@@ -40,6 +41,7 @@
 					<Add library="sfml-graphics" />
 					<Add library="sfml-window" />
 					<Add library="sfml-system" />
+					<Add library="sfml-audio" />
 				</Linker>
 			</Target>
 		</Build>
@@ -52,6 +54,8 @@
 			<Add directory="../../../Prog/CodeBlocks/MinGW/My_include/SFML-2.4.2/lib" />
 			<Add directory="C:/Program Files (x86)/CodeBlocks/SFML-2.4.2/lib" />
 		</Linker>
+		<Unit filename="Landing_site.cpp" />
+		<Unit filename="Landing_site.h" />
 		<Unit filename="include/Rocket.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Rocket.cpp" />

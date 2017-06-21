@@ -1,9 +1,11 @@
 # depslib dependency file v1.0
-1497452409 source:c:\users\arnaud\documents\github\sfml-training\main.cpp
+1497681801 source:c:\users\arnaud\documents\github\sfml-training\main.cpp
 	<SFML/System.hpp>
 	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
 	<iostream>
 	"Rocket.h"
+	"Landing_site.h"
 
 1486736398 c:\program files (x86)\codeblocks\sfml-2.4.2\include\sfml\system.hpp
 	<SFML/Config.hpp>
@@ -393,10 +395,121 @@
 	<string>
 	<vector>
 
-1497452537 c:\users\arnaud\documents\github\sfml-training\include\rocket.h
+1497680067 c:\users\arnaud\documents\github\sfml-training\include\rocket.h
 	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
 
-1497453393 source:c:\users\arnaud\documents\github\sfml-training\src\rocket.cpp
+1497661318 source:c:\users\arnaud\documents\github\sfml-training\src\rocket.cpp
 	"Rocket.h"
 	<math.h>
+	<iostream>
+
+1486736397 c:\program files (x86)\codeblocks\sfml-2.4.2\include\sfml\audio.hpp
+	<SFML/System.hpp>
+	<SFML/Audio/InputSoundFile.hpp>
+	<SFML/Audio/Listener.hpp>
+	<SFML/Audio/Music.hpp>
+	<SFML/Audio/OutputSoundFile.hpp>
+	<SFML/Audio/Sound.hpp>
+	<SFML/Audio/SoundBuffer.hpp>
+	<SFML/Audio/SoundBufferRecorder.hpp>
+	<SFML/Audio/SoundFileFactory.hpp>
+	<SFML/Audio/SoundFileReader.hpp>
+	<SFML/Audio/SoundFileWriter.hpp>
+	<SFML/Audio/SoundRecorder.hpp>
+	<SFML/Audio/SoundSource.hpp>
+	<SFML/Audio/SoundStream.hpp>
+
+1486736455 c:\program files (x86)\codeblocks\sfml-2.4.2\include\sfml\audio\inputsoundfile.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Time.hpp>
+	<string>
+
+1486736397 c:\program files (x86)\codeblocks\sfml-2.4.2\include\sfml\audio\export.hpp
+	<SFML/Config.hpp>
+
+1486736397 c:\program files (x86)\codeblocks\sfml-2.4.2\include\sfml\audio\listener.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/System/Vector3.hpp>
+
+1486736455 c:\program files (x86)\codeblocks\sfml-2.4.2\include\sfml\audio\music.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/SoundStream.hpp>
+	<SFML/Audio/InputSoundFile.hpp>
+	<SFML/System/Mutex.hpp>
+	<SFML/System/Time.hpp>
+	<string>
+	<vector>
+
+1486736455 c:\program files (x86)\codeblocks\sfml-2.4.2\include\sfml\audio\soundstream.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/SoundSource.hpp>
+	<SFML/System/Thread.hpp>
+	<SFML/System/Time.hpp>
+	<SFML/System/Mutex.hpp>
+	<cstdlib>
+
+1486736397 c:\program files (x86)\codeblocks\sfml-2.4.2\include\sfml\audio\soundsource.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/AlResource.hpp>
+	<SFML/System/Vector3.hpp>
+
+1486736397 c:\program files (x86)\codeblocks\sfml-2.4.2\include\sfml\audio\alresource.hpp
+	<SFML/Audio/Export.hpp>
+
+1486736397 c:\program files (x86)\codeblocks\sfml-2.4.2\include\sfml\audio\outputsoundfile.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<string>
+
+1486736397 c:\program files (x86)\codeblocks\sfml-2.4.2\include\sfml\audio\sound.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/SoundSource.hpp>
+	<SFML/System/Time.hpp>
+	<cstdlib>
+
+1486736397 c:\program files (x86)\codeblocks\sfml-2.4.2\include\sfml\audio\soundbuffer.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/AlResource.hpp>
+	<SFML/System/Time.hpp>
+	<string>
+	<vector>
+	<set>
+
+1486736397 c:\program files (x86)\codeblocks\sfml-2.4.2\include\sfml\audio\soundbufferrecorder.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/SoundBuffer.hpp>
+	<SFML/Audio/SoundRecorder.hpp>
+	<vector>
+
+1486736397 c:\program files (x86)\codeblocks\sfml-2.4.2\include\sfml\audio\soundrecorder.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/AlResource.hpp>
+	<SFML/System/Thread.hpp>
+	<SFML/System/Time.hpp>
+	<vector>
+	<string>
+
+1486736397 c:\program files (x86)\codeblocks\sfml-2.4.2\include\sfml\audio\soundfilefactory.hpp
+	<SFML/Audio/Export.hpp>
+	<string>
+	<vector>
+	<SFML/Audio/SoundFileFactory.inl>
+
+1486736397 c:\program files (x86)\codeblocks\sfml-2.4.2\include\sfml\audio\soundfilefactory.inl
+
+1486736397 c:\program files (x86)\codeblocks\sfml-2.4.2\include\sfml\audio\soundfilereader.hpp
+	<SFML/Audio/Export.hpp>
+	<string>
+
+1486736397 c:\program files (x86)\codeblocks\sfml-2.4.2\include\sfml\audio\soundfilewriter.hpp
+	<SFML/Audio/Export.hpp>
+	<string>
+
+1497661097 c:\users\arnaud\documents\github\sfml-training\landing_site.h
+	<SFML/Graphics.hpp>
+
+1497661139 source:c:\users\arnaud\documents\github\sfml-training\landing_site.cpp
+	"Landing_site.h"
 
